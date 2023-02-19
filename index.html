@@ -28,7 +28,27 @@
                    - La definición <dd> será la propiedad "value"
             -->
             <div class="jumbotron">
+            
                 <h1 class="display-4" id="title">{{ title }}</h1>
+            
+            </div>
+
+            <div class="container">
+
+                <div class="row" style="margin-left: 2rem;">
+
+                    <div class="col-xs-12" v-for="item in col.collection.items" :key="item.id">
+
+                        <div class="card" style="width: 18rem">
+
+                            <div class="card-body">
+
+                                <dl v-for="data in item.data">
+
+                                    <dt></dt>
+                                    <dd></dd>
+
+                                </dl>
 
         </div>
 

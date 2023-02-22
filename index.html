@@ -38,11 +38,9 @@
 
                 <div class="row" style="margin-left: 1rem;">
 
-                    <div class="col-xs-12" v-for="item in col.collection.items" :key="item.id">
+                    <div class="col-md-4 mb-3 card" v-for="item in col.collection.items" :key="item.id">
 
-                        <div class="card" style="width: 18rem; margin-left: 2rem;">
-
-                            <div class="card-body">
+                        <div class="container mt-4 mb-3">
 
                                 <dl v-for="data in item.data">
 
